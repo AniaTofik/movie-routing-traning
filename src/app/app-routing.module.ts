@@ -5,6 +5,7 @@ import { MoviesInCategoryComponent } from "./pages/categories/movies-in-category
 import { MovieDetailsComponent } from "./pages/movies/movie-details/movie-details.component";
 import { MoviesComponent } from "./pages/movies/movies.component";
 import { PageNotFoundComponent } from "./pages/page-not-found/page-not-found.component";
+import { MoviesInYearComponent } from "./years/movies-in-year/movies-in-year.component";
 import { YearsComponent } from "./years/years.component";
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
     {path: 'categories', component: CategoriesComponent},
     {path: 'category/:category', component: MoviesInCategoryComponent},
     {path: 'years', component: YearsComponent},
+    {path: 'year/:year', component: MoviesInYearComponent},
     {path: '**', component: PageNotFoundComponent }
 ]
 
